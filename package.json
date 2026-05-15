@@ -30,6 +30,7 @@
     "@nuxt/ui": "^4.0.0",
     "@nuxtjs/i18n": "^9.0.0",
     "@pinia/nuxt": "^0.11.3",
+    "@supabase/supabase-js": "^2.105.4",
     "@vueuse/nuxt": "^14.3.0",
     "dayjs-nuxt": "^2.1.11",
     "nuxt": "^4.0.0",
