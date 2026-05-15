@@ -117,7 +117,9 @@ describe('IShareProvider — shareRoute', () => {
     Object.defineProperty(navigator, 'share', { value: shareMock, configurable: true })
 
     const { shareRoute } = useCapacitor()
-    await expect(shareRoute('Ruta', 'https://ruteo.app/routes/3')).rejects.toThrow('Share cancelled')
+    await expect(shareRoute('Ruta', 'https://ruteo.app/routes/3')).rejects.toThrow(
+      'Share cancelled',
+    )
   })
 })
 
