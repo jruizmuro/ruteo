@@ -1,11 +1,7 @@
 import { z } from 'zod'
+import { DISTANCE, ELEVATION, TRANSPORT_PROFILES } from '../constants/transport'
 
-export const TransportProfileSchema = z.enum([
-  'foot-walking',
-  'cycling-road',
-  'cycling-mountain',
-  'cycling-electric',
-])
+export const TransportProfileSchema = z.enum(TRANSPORT_PROFILES)
 
 export const CoordinateSchema = z.tuple([
   z.number().min(-180).max(180),
@@ -15,8 +11,8 @@ export const CoordinateSchema = z.tuple([
 export const GenerateRouteInputSchema = z.object({
   profile: TransportProfileSchema,
   startPoint: CoordinateSchema,
-  distanceKm: z.number().min(1).max(200),
-  elevationM: z.number().min(0).max(5000),
+  distanceKm: z.number().min(DISTANCE.MIN_KM).max(DISTANCE.MAX_KM),
+  elevationM: z.number().min(ELEVATION.MIN_M).max(ELEVATION.MAX_M),
 })
 
 export const RouteStatsSchema = z.object({
@@ -36,10 +32,10 @@ export const RouteSchema = z.object({
 
 export const RouteFiltersSchema = z.object({
   profile: TransportProfileSchema.optional(),
-  minDistanceKm: z.number().min(1).optional(),
-  maxDistanceKm: z.number().max(200).optional(),
-  minElevationM: z.number().min(0).optional(),
-  maxElevationM: z.number().max(5000).optional(),
+  minDistanceKm: z.number().min(DISTANCE.MIN_KM).optional(),
+  maxDistanceKm: z.number().max(DISTANCE.MAX_KM).optional(),
+  minElevationM: z.number().min(ELEVATION.MIN_M).optional(),
+  maxElevationM: z.number().max(ELEVATION.MAX_M).optional(),
 })
 
 export type TransportProfile = z.infer<typeof TransportProfileSchema>
