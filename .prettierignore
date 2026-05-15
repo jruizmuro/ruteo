@@ -1,0 +1,14 @@
+node_modules
+.nuxt
+.output
+dist
+coverage
+playwright-report
+test-results
+ios
+android
+pnpm-lock.yaml
+
+# Documentación del proyecto (no reformatear)
+CLAUDE.md
+docs/

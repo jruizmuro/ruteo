@@ -1,0 +1,44 @@
+{
+  "app": {
+    "name": "Ruteo",
+    "tagline": "Circular routes for runners and cyclists"
+  },
+  "nav": {
+    "planner": "Plan",
+    "myRoutes": "My routes",
+    "login": "Sign in",
+    "logout": "Sign out"
+  },
+  "home": {
+    "cta": "Plan my route",
+    "description": "Set distance and elevation; Ruteo generates the perfect circular route."
+  },
+  "planner": {
+    "title": "Plan a route",
+    "distance": "Distance (km)",
+    "elevation": "Elevation gain (m)",
+    "profile": "Activity type",
+    "profiles": {
+      "foot-walking": "Walking / trail",
+      "cycling-road": "Road cycling",
+      "cycling-mountain": "Mountain biking",
+      "cycling-electric": "E-bike"
+    },
+    "generate": "Generate routes",
+    "generating": "Generating...",
+    "variants": "Variants"
+  },
+  "route": {
+    "distance": "Distance",
+    "elevation": "Elevation +",
+    "duration": "Est. time",
+    "save": "Save route",
+    "export": "Export",
+    "share": "Share"
+  },
+  "errors": {
+    "generic": "Something went wrong. Please try again.",
+    "network": "No connection. Check your network.",
+    "unauthorized": "You need to sign in."
+  }
+}

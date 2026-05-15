@@ -1,0 +1,53 @@
+# Dependencies
+node_modules
+.pnpm-store
+
+# Nuxt
+.nuxt
+.output
+.data
+dist
+
+# Env
+.env
+.env.*
+
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Test / coverage
+coverage
+.nyc_output
+playwright-report
+playwright/.cache
+test-results
+
+# IDE
+.idea
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.DS_Store
+Thumbs.db
+
+# Claude Code (local — no subir al repo)
+.claude/
+
+# Capacitor (futuras fases)
+ios/App/Pods
+ios/App/build
+android/.gradle
+android/build
+android/app/build
+android/local.properties
+android/app/release
+android/app/debug
+
+# Husky
+.husky/_
+
+# Vercel
+.vercel

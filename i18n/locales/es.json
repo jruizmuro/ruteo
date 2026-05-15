@@ -1,0 +1,44 @@
+{
+  "app": {
+    "name": "Ruteo",
+    "tagline": "Rutas circulares para runners y ciclistas"
+  },
+  "nav": {
+    "planner": "Planificar",
+    "myRoutes": "Mis rutas",
+    "login": "Entrar",
+    "logout": "Salir"
+  },
+  "home": {
+    "cta": "Planificar mi ruta",
+    "description": "Define distancia y desnivel; Ruteo genera la ruta circular ideal."
+  },
+  "planner": {
+    "title": "Planificar ruta",
+    "distance": "Distancia (km)",
+    "elevation": "Desnivel (m)",
+    "profile": "Tipo de actividad",
+    "profiles": {
+      "foot-walking": "A pie / trail",
+      "cycling-road": "Ciclismo en carretera",
+      "cycling-mountain": "Ciclismo de montaña",
+      "cycling-electric": "Bicicleta eléctrica"
+    },
+    "generate": "Generar rutas",
+    "generating": "Generando...",
+    "variants": "Variantes"
+  },
+  "route": {
+    "distance": "Distancia",
+    "elevation": "Desnivel +",
+    "duration": "Tiempo est.",
+    "save": "Guardar ruta",
+    "export": "Exportar",
+    "share": "Compartir"
+  },
+  "errors": {
+    "generic": "Algo ha ido mal. Inténtalo de nuevo.",
+    "network": "Sin conexión. Comprueba tu red.",
+    "unauthorized": "Necesitas iniciar sesión."
+  }
+}
