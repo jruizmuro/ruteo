@@ -71,11 +71,15 @@ describe('RouteStatsSchema', () => {
   })
 
   it('rechaza valores negativos', () => {
-    expect(() => RouteStatsSchema.parse({ distanceKm: -1, elevationGainM: 0, estimatedMinutes: 0 })).toThrow()
+    expect(() =>
+      RouteStatsSchema.parse({ distanceKm: -1, elevationGainM: 0, estimatedMinutes: 0 }),
+    ).toThrow()
   })
 
   it('acepta valores en cero', () => {
-    expect(RouteStatsSchema.parse({ distanceKm: 0, elevationGainM: 0, estimatedMinutes: 0 })).toBeDefined()
+    expect(
+      RouteStatsSchema.parse({ distanceKm: 0, elevationGainM: 0, estimatedMinutes: 0 }),
+    ).toBeDefined()
   })
 })
 
