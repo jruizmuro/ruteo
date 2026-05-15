@@ -22,11 +22,11 @@ export default defineNuxtConfig({
   },
 
   runtimeConfig: {
-    orsApiKey: '',
-    supabaseServiceKey: '',
+    orsApiKey: process.env['ORS_API_KEY'] ?? '',
+    supabaseServiceKey: process.env['SUPABASE_SERVICE_KEY'] ?? '',
     public: {
-      supabaseUrl: '',
-      supabaseAnonKey: '',
+      supabaseUrl: process.env['SUPABASE_URL'] ?? '',
+      supabaseAnonKey: process.env['SUPABASE_ANON_KEY'] ?? '',
     },
   },
 
