@@ -36,6 +36,9 @@ Thumbs.db
 # Claude Code (local — no subir al repo)
 .claude/
 
+# Supabase (temporal local — no subir al repo)
+supabase/.temp/
+
 # Capacitor (futuras fases)
 ios/App/Pods
 ios/App/build
