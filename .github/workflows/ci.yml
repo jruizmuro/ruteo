@@ -80,6 +80,7 @@ jobs:
     env:
       SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
       SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+      ORS_API_KEY: ${{ secrets.ORS_API_KEY }}
     steps:
       - uses: actions/checkout@v6.0.2
       - uses: pnpm/action-setup@v6.0.8
